@@ -11,7 +11,7 @@ plugins=(git ant osx brew gradle npm node sudo tmux github themes)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/jonathan/android/platform-tools:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/jonathan/android/platform-tools:/Users/jonathan/macfiles/bin:$PATH"
 export EDITOR='vim'
 bindkey -v
 bindkey '^R' history-incremental-pattern-search-backward
