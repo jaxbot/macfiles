@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "symlinking dotfiles to ~/"
+
+rm ~/.tmux.conf
+rm ~/.zshrc
+rm ~/.vimrc
+ln .tmux.conf ~/.tmux.conf
+ln .zshrc ~/.zshrc
+ln ~/.vim/vimrc ~/.vimrc
+
