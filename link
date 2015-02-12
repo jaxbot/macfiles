@@ -9,6 +9,10 @@ ln .tmux.conf ~/.tmux.conf
 ln .zshrc ~/.zshrc
 ln ~/.vim/vimrc ~/.vimrc
 
+# Mjolnir window manager
+mkdir ~/.mjolnir
+ln -s mjolnir.lua ~/.mjolnir/init.lua
+
 # Install services
 cp -rf workflows/* ~/Library/Services/
 
