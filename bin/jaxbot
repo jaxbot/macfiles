@@ -2,4 +2,5 @@
 while true
 do
 	ssh jaxbot -t tmux a
+	sleep 1
 done
