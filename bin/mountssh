@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir /Volumes/$1
+sshfs $1: /Volumes/$1
+open /Volumes/$1
