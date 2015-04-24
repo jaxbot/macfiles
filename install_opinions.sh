@@ -4,6 +4,12 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 # Most taken from https://gist.github.com/brandonb927/3195465
 
+###############################################################################
+# Xcode License
+###############################################################################
+
+sudo xcodebuild -license
+
 # Disable gatekeeper
 sudo spctl --master-disable
 sudo defaults write /var/db/SystemPolicy-prefs.plist enabled -string no
@@ -119,10 +125,4 @@ sudo pmset -a sms 0
 
 # Disable annoying backswipe in Chrome
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
-
-###############################################################################
-# Xcode License
-###############################################################################
-
-sudo xcodebuild -license
 
