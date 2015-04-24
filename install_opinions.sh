@@ -4,9 +4,6 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 # Most taken from https://gist.github.com/brandonb927/3195465
 
-# Hide Spotlight
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-
 # Disable gatekeeper
 sudo spctl --master-disable
 sudo defaults write /var/db/SystemPolicy-prefs.plist enabled -string no
