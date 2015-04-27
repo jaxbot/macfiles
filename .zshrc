@@ -9,7 +9,7 @@ COMPLETION_WAITING_DOTS="true"
 # No, I don't want you asking me if I want updates
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(git ant osx brew gradle npm node sudo tmux github themes)
+plugins=(git osx brew npm node tmux github themes)
 
 source $ZSH/oh-my-zsh.sh
 

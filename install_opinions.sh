@@ -4,8 +4,11 @@
 # https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 # Most taken from https://gist.github.com/brandonb927/3195465
 
-# Hide Spotlight
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+###############################################################################
+# Xcode License
+###############################################################################
+
+sudo xcodebuild -license
 
 # Disable gatekeeper
 sudo spctl --master-disable
@@ -122,10 +125,4 @@ sudo pmset -a sms 0
 
 # Disable annoying backswipe in Chrome
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
-
-###############################################################################
-# Xcode License
-###############################################################################
-
-sudo xcodebuild -license
 
