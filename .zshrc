@@ -9,7 +9,7 @@ COMPLETION_WAITING_DOTS="true"
 # No, I don't want you asking me if I want updates
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(git osx brew npm node tmux github themes)
+plugins=(git osx brew npm node github themes)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -17,11 +17,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/
 export EDITOR='vim'
 bindkey -v
 bindkey '^R' history-incremental-pattern-search-backward
-
-# Enable node version manager
-source $(brew --prefix nvm)/nvm.sh
-export NVM_DIR="/Users/jonathan/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Have each shell use its own history, instead of combining them globally
 setopt APPEND_HISTORY
