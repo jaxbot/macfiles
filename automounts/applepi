@@ -1,0 +1,1 @@
+seagate -fstype=nfs,vers=3,rw,soft,intr,rsize=32768,wsize=32768,noatime,timeo=1200,retrans=10,proto=tcp,resvport,locallocks,noacl 192.168.1.100:/media/seagate
