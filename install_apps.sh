@@ -33,4 +33,13 @@ brew install ag
 brew install nvm
 brew install hg
 
-
+# Install Powerline fonts
+cd ~
+mkdir Temp
+cd Temp
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+cd ~
