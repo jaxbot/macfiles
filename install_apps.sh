@@ -8,8 +8,12 @@ brew install macvim --override-system-vim --custom-icons --with-lua
 
 # Install nginx
 brew install nginx
+mkdir -p ~/Library/LaunchAgents
 ln -sfv /usr/local/opt/nginx/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist
+brew tap homebrew/dupes
+brew tap homebrew/php
+brew install --without-apache --with-fpm --with-mysql php56
 
 # Install nodejs
 brew install nodejs
@@ -17,6 +21,7 @@ npm install -g jshint
 
 # Install mariadb
 brew install mariadb
+ln -sfv /usr/local/opt/mariadb/*.plist ~/Library/LaunchAgents
 
 # Install ffmpeg
 brew install ffmpeg
@@ -32,6 +37,7 @@ brew upgrade git
 brew install ag
 brew install nvm
 brew install hg
+brew install mosh
 
 # Install Powerline fonts
 cd ~
@@ -43,3 +49,6 @@ cd fonts
 cd ..
 rm -rf fonts
 cd ~
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
