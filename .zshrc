@@ -27,3 +27,7 @@ export LOLCOMMITS_DELAY=1
 export LOLCOMMITS_FORK=1
 export LOLCOMMITS_ANIMATE=2
 
+set_title () {
+	echo -e "\033];$@\007"
+}
+DISABLE_AUTO_TITLE="true"
