@@ -31,3 +31,5 @@ set_title () {
 	echo -e "\033];$@\007"
 }
 DISABLE_AUTO_TITLE="true"
+
+alias vim=nvim
